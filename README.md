@@ -7,3 +7,4 @@ TODOs after creating a repository based on this template:
     - homepage
     - repository
 2. Set scopes in [contributing.md](.github/contributing.md).
+3. Update this README.
