@@ -7,7 +7,6 @@
         "type": "git",
         "url": "https://github.com/lars-reimann/template-base"
     },
-    "prettier": "@lars-reimann/prettier-config",
     "scripts": {
         "fix": "prettier --write .",
         "prepare": "husky install .husky"
