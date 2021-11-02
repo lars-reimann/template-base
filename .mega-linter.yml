@@ -1,4 +1,4 @@
-# See all available variables at https://nvuillam.github.io/mega-linter/configuration/ and in linters documentation.
+# See all available variables at https://megalinter.github.io/configuration/ and in linters documentation.
 
 # Config
 APPLY_FIXES: all
@@ -13,7 +13,7 @@ TYPESCRIPT_DEFAULT_STYLE: prettier
 
 # Commands
 PRE_COMMANDS:
-  - command: npm install @lars-reimann/prettier-config
+  - command: npm install
     cwd: root
 
 # Linters

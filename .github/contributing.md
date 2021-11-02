@@ -9,7 +9,7 @@ All **types** from [Commitizen](https://github.com/commitizen/conventional-commi
 allowed. Pick the one that fits best:
 
 | Type       | Meaning                                                                   |
-| ---------- | ------------------------------------------------------------------------- |
+|------------|---------------------------------------------------------------------------|
 | **`feat`** | New feature                                                               |
 | **`fix`**  | Bug fix                                                                   |
 | `docs`     | Documentation only changes                                                |
@@ -25,14 +25,14 @@ allowed. Pick the one that fits best:
 Possible **scopes** are:
 
 | Scope          | Meaning                                                                           |
-| -------------- | --------------------------------------------------------------------------------- |
+|----------------|-----------------------------------------------------------------------------------|
 | `exampleScope` | **If you still see this option I forgot to change this part of the template.** 😉 |
 
 Examples:
 
--   `feat(exampleScope): fancy new feature`
--   `docs: write contributing guide`
--   `refactor!: drop support for older browsers` (the exclamation mark denotes a breaking change)
+- `feat(exampleScope): fancy new feature`
+- `docs: write contributing guide`
+- `refactor!: drop support for older browsers` (the exclamation mark denotes a breaking change)
 
 ### Description
 

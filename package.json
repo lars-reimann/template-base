@@ -7,17 +7,7 @@
         "type": "git",
         "url": "https://github.com/lars-reimann/template-base"
     },
-    "scripts": {
-        "fix": "prettier --write .",
-        "prepare": "husky install .husky"
-    },
-    "lint-staged": {
-        "*.{md,json,yaml,yml}": "prettier --write"
-    },
     "devDependencies": {
-        "@lars-reimann/prettier-config": "^4.0.1",
-        "husky": "^7.0.4",
-        "lint-staged": "^11.2.6",
-        "prettier": "^2.4.1"
+        "@lars-reimann/prettier-config": "^4.0.1"
     }
 }
