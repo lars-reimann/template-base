@@ -7,6 +7,10 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: ${{ github.head_ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
 env:
   # Apply linter fixes configuration
   APPLY_FIXES: all
@@ -15,18 +19,7 @@ env:
   FILTER_REGEX_EXCLUDE: (\.github/workflows/)
 
 jobs:
-  # Cancel duplicate jobs:
-  cancel_duplicates:
-    name: Cancel duplicate jobs
-    runs-on: ubuntu-latest
-    steps:
-      - uses: fkirc/skip-duplicate-actions@v3.4.1
-        with:
-          github_token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
-          cancel_others: true
-
-  build:
-    name: Mega-Linter
+  lint:
     runs-on: ubuntu-latest
     steps:
       # Git Checkout
@@ -41,7 +34,7 @@ jobs:
         id: ml
         # You can override Mega-Linter flavor used to have faster performances
         # More info at https://megalinter.github.io/flavors/
-        uses: megalinter/megalinter@v5
+        uses: megalinter/megalinter@v5.0.5
         env:
           # All available variables are described in documentation
           # https://megalinter.github.io/configuration/
