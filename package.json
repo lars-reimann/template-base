@@ -2,13 +2,13 @@
     "name": "template-base",
     "version": "0.0.1",
     "private": true,
+    "prettier": "@lars-reimann/prettier-config",
     "homepage": "https://github.com/lars-reimann/template-base",
     "repository": {
         "type": "git",
         "url": "https://github.com/lars-reimann/template-base"
     },
     "devDependencies": {
-        "@lars-reimann/eslint-config": "^4.4.2",
         "@lars-reimann/prettier-config": "^5.0.0"
     }
 }
